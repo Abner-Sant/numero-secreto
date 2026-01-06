@@ -14,6 +14,10 @@ while True:
 
     palpite = int(input("Digite um número entre 1 e 10: "))
 
+    if palpite < 1 or palpite > 10:
+        print("Número inválido! Tente novamente.")
+        continue
+
     if palpite < numero_aleatorio:
         print("Tente um número maior.")
         tentativas += 1
